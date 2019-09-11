@@ -3,15 +3,6 @@ require_relative './computer.rb'
 class User < ActiveRecord::Base
 #User has many game
   
-   
-
-
-  attr_reader :name
-  attr_accessor :move
-
-  def initialize(name)
-    @name = name
-  end
 
   def make_move(move = nil)
     @move = move if @name != 'Computer'
