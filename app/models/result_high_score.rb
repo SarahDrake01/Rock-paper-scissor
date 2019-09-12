@@ -1,5 +1,6 @@
 class Result_High_Score < ActiveRecord::Base
-    #High score belongs to the game.
+    has_many :games
+    has_many :users
     def check(user1_move, user2_move)
         @winner = "user1" if user1_move == 'Rock' && user2_move == 'Scissor'
         @winner = "user1" if user1_move == 'Scissor' && user2_move == 'Paper'

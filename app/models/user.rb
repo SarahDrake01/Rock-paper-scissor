@@ -1,7 +1,7 @@
 require_relative './computer.rb'
 
 class User < ActiveRecord::Base
-#User has many game
+has_many :game
   
 
   def make_move(move = nil)

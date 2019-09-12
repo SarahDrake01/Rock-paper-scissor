@@ -1,5 +1,5 @@
 class Game < ActiveRecord::Base
-    #Game belongs to the user
+    belongs_to :Useruser
     #game belongs to the result_high_score
 
     class Game
